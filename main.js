@@ -14,7 +14,7 @@ $(document).ready(function () {
                 $("#glow").remove();
 
                 txt.hide()
-                   .html("Te deseamos un feliz 21 cumpleaños <br>- Castores Afanosos / Tu secta china fav")
+                   .html("Te deseamos un feliz 21 cumpleaños <br>")
                    .delay(750)
                    .fadeIn(300, function () {
                         // Segundo mensaje
