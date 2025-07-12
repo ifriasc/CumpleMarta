@@ -1,0 +1,137 @@
+.cake {
+  position: absolute;
+  display: none;
+  top: 30%;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  height: 300px;
+}
+/* Base */
+.cake:after {
+  background: #ffffff;
+  border-radius: 300px;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 6px; /* 300 / 50 */
+}
+/* Candle */
+.velas {
+  background: #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -7.5px; /* 300 / 20 = 15; 15 / 2 = 7.5 */
+  margin-top: -25px; /* 300 / 6 */
+  width: 15px;
+  height: 50px;
+}
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6.66px; /* 300 / 45 */
+}
+.velas:after {
+  display: block;
+  top: 25%;
+  left: 0;
+}
+.velas:before {
+  display: none;
+  top: 45%;
+  left: 0;
+}
+/* Fire */
+.fuego {
+  display: block;
+  border-radius: 100%;
+  box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -10px; /* 300 / 15 */
+  width: 20px; /* 300 / 15 */
+  height: 37.5px; /* 300 / 8 */
+}
+
+.fuego:after {
+  display: block;
+}
+.fuego:before {
+  display: none;
+}
+
+/* Frosting */
+.cobertura {
+  background: #ece7e3;
+  border-radius: 150px; /* 300 / 2 */
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -83.33px; /* 300 / 1.8 = 166.66; 166.66 / 2 = 83.33 */
+  margin-top: -15px; /* 300 / 10 */
+  width: 166.66px; /* 300 / 1.8 */
+  height: 37.5px; /* 300 / 8 */
+  z-index: 10;
+}
+.cobertura:after,
+.cobertura:before {
+  background: #ece7e3;
+  border-radius: 300px;
+  content: "";
+  position: absolute;
+  width: 15px; /* 300 / 20 */
+  height: 30px; /* 300 / 10 */
+}
+.cobertura:after {
+  top: 20px; /* 300 / 15 */
+  right: 42.85px; /* 300 / 7 */
+}
+.cobertura:before {
+  top: 30px; /* 300 / 10 */
+  right: 27.27px; /* 300 / 11 */
+}
+/* Bizcocho */
+.bizcocho {
+  background: #6d3826;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -75px; /* 300 / 2 = 150; 150 / 2 = 75 */
+  width: 150px; /* 300 / 2 */
+  height: 100px; /* 300 / 3 */
+}
+.bizcocho:after,
+.bizcocho:before {
+  background: rgba(236, 231, 227, 0.6);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px; /* 300 / 20 */
+}
+.bizcocho:after {
+  top: 30%;
+  left: 0;
+}
+.bizcocho:before {
+  top: 60%;
+  left: 0;
+}
+/* Text */
+h1,
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  user-select: none;
+}
